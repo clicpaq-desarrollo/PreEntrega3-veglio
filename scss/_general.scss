@@ -34,8 +34,9 @@ h6 {
 }
  
 body {
-  background-image: url("data:image/svg+xml;utf8,<tu código SVG aquí>");
-  background-size: cover; /* Ajusta el tamaño para cubrir todo el cuerpo */
-  background-repeat: no-repeat; /* Evita repetir el patrón */
-  background-attachment: fixed; /* Fija el fondo al desplazarse la página */
+  background-image: url("../assets/images/bg-maps.svg"); 
+  
+  background-position: center;
+  background-repeat: repeat-y;
 }
+ 
