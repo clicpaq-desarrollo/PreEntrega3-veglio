@@ -8,10 +8,7 @@
   background-color: #8f1e2e;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
+body,
 h1,
 h2,
 h3,
@@ -226,6 +223,7 @@ body {
   align-items: center;
   padding: 10px 15px;
   width: 150px;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
   background-color: #f0f0f0;
   justify-content: space-between;
@@ -260,6 +258,11 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 480px) {
+  .social-icons {
+    display: none;
+  }
+}
 .formulario-envios {
   border: 3px solid #000;
   background: rgba(255, 255, 255, 0.631372549);
@@ -335,9 +338,6 @@ table {
 /* Fonts */
 #timeline {
   padding: 100px 0;
-  background: #f7f7f7;
-  border-top: 1px solid rgba(191, 191, 191, 0.4);
-  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 }
 #timeline h1 {
   text-align: center;
@@ -524,6 +524,103 @@ table {
 }
 #timeline .demo-card--step6 .head::after {
   border-color: #3ee9d1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.mapaDiv path {
+  fill: khaki;
+  stroke: sandybrown;
+  stroke-width: 2px;
+}
+
+.mapaDiv path.llegamos {
+  fill: rgb(206, 199, 135);
+  stroke: sandybrown;
+  stroke-width: 2px;
+}
+
+.mapaDiv path.llegamos:hover {
+  fill: rgb(143, 135, 64);
+  cursor: pointer;
+}
+
+details, summary {
+  color: #fff;
+}
+
+details {
+  width: 80%;
+  margin: 0 auto;
+  background: #9f1a2a;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  background: #751521;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+summary:hover {
+  background: #991b2a;
+}
+
+summary:before {
+  content: "";
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+}
+
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details > ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.mapsBody {
+  height: 100vh;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

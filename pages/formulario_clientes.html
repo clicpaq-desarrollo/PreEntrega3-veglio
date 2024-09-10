@@ -12,11 +12,10 @@
   <link rel="icon" href="../assets/images/Logo.png" type="image/x-icon" />
   <meta name="description" content="Clicpaq Argentina ofrece servicios rápidos y seguros de envíos nacionales, seguimiento de paquetes en tiempo real, y soluciones de logística para clientes particulares y empresas." />
   <meta name="keywords" content="Clicpaq, envíos nacionales, seguimiento de envíos, logística, entrega de paquetes, envíos seguros, transporte de mercadería, envíos puerta a puerta, Argentina" />
-
   <title>Nosotros</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <header>
     <nav class="bg-clp navbar navbar-dark navbar-expand-lg fixed-top">
       <div class="container">
@@ -30,13 +29,13 @@
         <div class="navbar-collapse collapse justify-content-center" id="navbarPrincipal">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#contacto">Contacto</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../index.html#buscar_envios">Busca tu envío</a>
@@ -47,8 +46,8 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container my-5 py-5" >
+  <main class="flex-fill">
+    <div class="container my-5 py-5">
       <div class="row">
         <div class="col-md-12">
           <h1 class="titulo text-center">Nuevo Cliente</h1>
@@ -57,47 +56,45 @@
       </div>
       <form class="row g-3">
         <div class="form-floating col-12 col-md-6">
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre y apellido">
-            <label for="nombre">Nombre y Apellido</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+          <label for="nombre">Nombre y Apellido</label>
         </div>
 
         <div class="form-floating col-12 col-md-6">
-            <input type="text" class="form-control" id="empresa" placeholder="Ingrese el nombre de su empresa">
-            <label for="empresa">Nombre de la Empresa</label>
+          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Ingrese el nombre de su empresa" required>
+          <label for="empresa">Nombre de la Empresa</label>
         </div>
 
         <div class="form-floating col-12 col-md-4">
-            <input type="number" class="form-control" id="envios" placeholder="Ingrese la cantidad de envíos mensuales">
-            <label for="envios">Cantidad de Envíos Mensuales</label>
+          <input type="number" class="form-control" id="envios" name="envios" placeholder="Ingrese la cantidad de envíos mensuales" min="1" required>
+          <label for="envios">Cantidad de Envíos Mensuales</label>
         </div>
         <div class="form-floating col-12 col-md-4">
-            <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
-            <label for="telefono">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" pattern="[0-9]{10}" required>
+          <label for="telefono">Teléfono</label>
         </div>
         <div class="form-floating col-12 col-md-4">
-            <input type="email" class="form-control" id="mail" placeholder="Ingrese su correo electrónico">
-            <label for="mail">Correo Electrónico</label>
+          <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingrese su correo electrónico" required>
+          <label for="mail">Correo Electrónico</label>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>  
-            
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
       </form>
     </div>
-   </main>
+  </main>
 
-  <footer class="py-3 mt-4 bg-clp  ">
+  <footer class="py-3 mt-4 bg-clp">
     <div class="container d-flex flex-column align-items-center mt-5">
       <img class="w-25" src="../assets/images/logo-tte-blanco.png" alt="Logo de la empresa" />
       <p class="text-center text-white">
-        © 2024 | Powered by <strong>Gonzalo Veglio.</strong> Todos los
-        Derechos Reservados
+        © 2024 | Powered by <strong>Gonzalo Veglio.</strong> Todos los Derechos Reservados
       </p>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/db93820de6.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

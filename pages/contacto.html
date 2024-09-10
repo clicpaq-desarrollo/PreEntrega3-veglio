@@ -13,7 +13,7 @@
   <meta name="description" content="Clicpaq Argentina ofrece servicios rápidos y seguros de envíos nacionales, seguimiento de paquetes en tiempo real, y soluciones de logística para clientes particulares y empresas." />
   <meta name="keywords" content="Clicpaq, envíos nacionales, seguimiento de envíos, logística, entrega de paquetes, envíos seguros, transporte de mercadería, envíos puerta a puerta, Argentina" />
 
-  <title>Clicpaq</title>
+  <title>Contacto</title>
 </head>
 
 <body>
@@ -30,13 +30,13 @@
         <div class="navbar-collapse collapse" id="navbarPrincipal">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#contacto">Contacto</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../index.html#buscar_envios">Busca tu envío</a>
@@ -47,24 +47,29 @@
     </nav>
   </header>
   <main>
-    <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+    <section class="contacto py-5 mt-4" id="contacto" aria-labelledby="contacto-title">
       <div class="container d-flex flex-column align-items-center mt-5">
         <h2 id="contacto-title" class="subTitulos mb-5">Contáctanos</h2>
         <div class="row">
           <div class="col-12 col-md-6">
             <form>
-              <div class="mb-3">
-                <label for="consulta_nombre_apellido" class="form-label">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="consulta_nombre_apellido" />
+              <div class="mb-3 form-floating ">
+                <input type="text" class="form-control" id="consulta_nombre_apellido" placeholder="Nombre y Apellido">
+                <label for="consulta_nombre_apellido">Nombre y Apellido</label>
               </div>
-              <div class="mb-3">
-                <label for="consulta_email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="consulta_email" />
+              <div class="mb-3 form-floating ">
+                <input type="email" class="form-control" id="consulta_email" placeholder="example@example.com">
+                <label for="consulta_email">Email</label>
               </div>
-              <div class="mb-3">
-                <label for="consulta_telefono" class="form-label">Teléfono</label>
-                <input type="text" class="form-control" id="consulta_telefono" />
+              <div class="mb-3 form-floating ">
+                <input type="text" class="form-control" id="consulta_telefono" placeholder="11-1111-1111">
+                <label for="consulta_telefono">Teléfono</label>
+              </div> 
+              <div class="mb-3 form-floating ">  
+                <textarea class="form-control h-100" placeholder="Ingresa tu consulta" id="consulta_consulta" rows="5" ></textarea>
+                <label for="consulta_consulta">Consulta</label>
               </div>
+
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>

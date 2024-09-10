@@ -10,12 +10,8 @@
 .bg-clp {
   background-color: $primary-color;
 }
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
+ 
+body,
 h1,
 h2,
 h3,
@@ -35,7 +31,6 @@ h6 {
  
 body {
   background-image: url("../assets/images/bg-maps.svg"); 
-  
   background-position: center;
   background-repeat: repeat-y;
 }
