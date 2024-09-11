@@ -69,19 +69,7 @@
   }
 }
 
-.to-top {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  background-color: $primary-color;
-  border-radius: 5px;
-  padding: 15px;
 
-  &:hover {
-    background-color: $hover-color;
-  }
-}
- 
 
 //CARDS DE SERVICIOS
 .cardBox {

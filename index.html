@@ -14,6 +14,102 @@
   <meta name="keywords" content="Clicpaq, envíos nacionales, seguimiento de envíos, logística, entrega de paquetes, envíos seguros, transporte de mercadería, envíos puerta a puerta, Argentina" />
 
   <title>Clicpaq</title>
+  <style>
+    
+#introduccion-servicio {
+  padding-top: 50px;
+}
+#introduccion-servicio .container { 
+  width: 50%;
+}
+
+
+.circleForm {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  margin: 10px;
+  flex-shrink: 0; 
+}
+
+.circleForm-01 {
+  background-image: url('../assets/images/camion001.jpg');
+}
+
+.circleForm-02 {
+  background-image: url('../assets/images/camion001.jpg');
+}
+
+.circleForm-03 {
+  background-image: url('../assets/images/camion001.jpg');
+}
+
+
+.text-left {
+  border-left: 2px solid #7e0808;
+  padding: 0 10px;
+}
+
+.text-right {
+  border-right: 2px solid #7e0808;
+  padding: 0 10px;
+  text-align: right;
+}
+
+
+@media (max-width: 768px) {
+  .circleForm {
+    width: 150px;
+    height: 150px;
+  }
+  #introduccion-servicio .container { 
+  width: 100%;
+}
+}
+
+
+
+
+
+
+    #acceso-detallado {
+      background-image: url('./assets/images/bg-maps.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+    }
+
+    .icon-circle {
+      padding: 20px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      background-color: #000;
+    }
+
+    #caracteristicas-servicio .col-lg-3,
+    #caracteristicas-servicio .col-md-6 {
+      transform: translateY(-50px);
+    }
+
+    .icon-circle+h5 {
+      border-top: 3px solid #8f1e2e;
+      padding-top: 10px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    #caracteristicas-servicio {
+      padding-top: -50px;
+    }
+  </style>
 </head>
 
 <body>
@@ -106,7 +202,70 @@
         </button>
       </div>
     </section>
-    <section id="mapa" class="text-center py-5">
+
+
+
+    <section id="introduccion-servicio" class="py-5">
+      <div class="container ">
+        <div class="d-flex flex-column align-items-center">
+          <article class="d-flex align-items-center justify-content-around">
+            <div class="circleForm circleForm-01" aria-hidden="true"></div>
+            <p class="text-left">Somos mucho más que un servicio de transporte</p>
+          </article>
+    
+          <article class="d-flex align-items-center justify-content-around">
+            <p class="text-right">En Clicpaq, ofrecemos una solución integral de logística que incluye la planificación de rutas y asignación de unidades</p>
+            <div class="circleForm circleForm-02" aria-hidden="true"></div>
+          </article>
+    
+          <article class="d-flex align-items-center justify-content-around">
+            <div class="circleForm circleForm-03" aria-hidden="true"></div>
+            <p class="text-left">Todo respaldado por nuestra avanzada tecnología.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="acceso-detallado" class="d-flex justify-content-center align-items-center">
+      <div class="container text-white text-center">
+        <h2>Acceso Transparente y Detallado</h2>
+        <p class="lead">Los clientes tienen acceso directo a nuestra plataforma, donde pueden:</p>
+      </div>
+    </section>
+
+    <section id="caracteristicas-servicio">
+      <div class="container ">
+        <div class="row text-center">
+          <div class="col-6 col-lg-3 col-md-6 mb-4 d-flex flex-sm flex-column align-items-center">
+            <div class="icon-circle mb-3 bg-dark text-white">
+              <i class="fas fa-shipping-fast fa-3x"></i>
+            </div>
+            <h5>Visualizar el estado de sus envíos en tiempo real</h5>
+          </div>
+          <div class="col-6 col-lg-3 col-md-6 mb-4 d-flex flex-sm flex-column align-items-center">
+            <div class="icon-circle mb-3 bg-dark text-white">
+              <i class="fas fa-map-marker-alt fa-3x"></i>
+            </div>
+            <h5>Acceder a información detallada sobre la ubicación de las unidades</h5>
+          </div>
+          <div class="col-6 col-lg-3 col-md-6 mb-4 d-flex flex-sm flex-column align-items-center">
+            <div class="icon-circle mb-3 bg-dark text-white">
+              <i class="fas fa-map-pin fa-3x"></i>
+            </div>
+            <h5>Geoposición de la entrega</h5>
+          </div>
+          <div class="col-6 col-lg-3 col-md-6 mb-4 d-flex flex-sm flex-column align-items-center">
+            <div class="icon-circle mb-3 bg-dark text-white">
+              <i class="fas fa-camera fa-3x"></i>
+            </div>
+            <h5>Visualización de imágenes tomadas por el conductor</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mapa-envios" class="text-center mb-5">
       <div class="container">
         <h2>Explora nuestras áreas de envío</h2>
         <p>Consulta el mapa interactivo para ver todas las localidades y provincias a las que realizamos envíos.</p>
@@ -114,39 +273,8 @@
       </div>
     </section>
 
-    <section id="nosotros" aria-labelledby="nosotros-title">
-      <div class="container d-flex py-5 flex-wrap justify-content-center">
-        <h2 id="nosotros-title" class="visually-hidden">Sobre nosotros</h2>
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid" alt="Imagen descriptiva de envíos" />
-          </div>
-          <div class="col-md-6 col-12">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Buscá tus envíos como siempre deberías haberlo hecho.
-            </h1>
-            <p class="lead">
-              Nombre de destinatario, número de envío, localidad de destino o
-              número de remito. Ningún dato es un problema para nosotros.(La
-              velocidad de respuesta es real)
-            </p>
-          </div>
-          <div class="col-md-6 col-12">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Buscá tus envíos como siempre deberías haberlo hecho.
-            </h1>
-            <p class="lead">
-              Nombre de destinatario, número de envío, localidad de destino o
-              número de remito. Ningún dato es un problema para nosotros.(La
-              velocidad de respuesta es real)
-            </p>
-          </div>
-          <div class="col-md-6 col-12">
-            <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid" alt="Imagen descriptiva de envíos" />
-          </div>
-        </div>
-      </div>
-    </section>
+
+ 
     <section class="separador"></section>
     <section>
       <div class="container">
@@ -213,10 +341,10 @@
         </div>
       </div>
     </section>
-    <section>
-      <div id="buscar_envios" class="container d-flex flex-column justify-content-center align-items-center py-5 my-5 formulario-envios formulario-envios--compacto text-center">
+    <section id="buscar_envios" class="pt-5">
+      <div class="container d-flex flex-column justify-content-center align-items-center py-5 my-5 formulario-envios formulario-envios--compacto text-center">
         <div>
-          <h1>¿Querés buscar un envío?</h1>
+          <h2>¿Querés buscar un envío?</h2>
           <p>Ingresa tu número de envío en el formulario debajo</p>
         </div>
         <div>
@@ -250,7 +378,7 @@
             <img class="layout__img" src="./assets/images/clientes/fravega.svg" alt="Cliente Fravega" />
           </div>
         </div>
-        <div class="d-flex flex-column align-items-center mt-5">
+        <div class="d-flex flex-column justify-content-center align-items-center mt-5">
           <h2 class="subTitulos ">¡Quiero ser cliente!</h2>
           <p>
             ¿Estás buscando una logística que pueda ofrecer algo diferente?
@@ -262,8 +390,9 @@
     </section>
   </main>
 
+
   <footer class="py-3 mt-4 bg-clp">
-    <div class="container d-flex flex-column align-items-center mt-5">
+    <div class="container d-flex flex-column align-items-center mt-4">
       <img class="w-25" src="./assets/images/logo-tte-blanco.png" alt="Logo de la empresa" />
       <p class="text-center text-white">
         © 2024 | Powered by <strong>Gonzalo Veglio.</strong> Todos los
@@ -280,9 +409,9 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalEnviosLabel">
+          <h2 class="modal-title fs-5" id="modalEnviosLabel">
             Resultado de Búsqueda
-          </h1>
+          </h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
