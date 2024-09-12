@@ -286,7 +286,7 @@ body {
   background-image: url("../assets/images/camion001.jpg");
 }
 
-.circleForm-03 { 
+.circleForm-03 {
   background-image: url("../assets/images/locali.jpeg");
 }
 
@@ -523,7 +523,7 @@ body {
 }
 @media (min-width: 1000px) {
   #timeline .time-card .body {
-    height: 315px;
+    height: 350px;
   }
 }
 #timeline .time-card .body p {
